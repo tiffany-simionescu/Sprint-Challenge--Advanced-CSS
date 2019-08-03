@@ -14,16 +14,14 @@
   }
 
   h1 {
-    margin: 2rem 0;
-    color: @nav-font;
+    .margin-color(2rem 0, @nav-font);
   }
 
   nav {
     margin: auto 0;
 
     a {
-      margin: auto 1.6rem;
-      color: @nav-font;
+      .margin-color(auto 1.6rem, @nav-font);
 
       &:hover {
         color: lighten(@nav-font, 50%);
