@@ -1,0 +1,379 @@
+.nav-border {
+  border: 1px solid #f1f1f1;
+}
+.nav-align {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #5e6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+  color: #23293b;
+}
+h1 {
+  font-size: 4.2rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  background-color: #f6f6f6;
+  color: #454a59;
+  border: 1px solid #f1f1f1;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .nav {
+    max-width: 500px;
+  }
+}
+.nav h1 {
+  margin: 2rem 0;
+  color: #454a59;
+}
+.nav nav {
+  margin: auto 0;
+}
+.nav nav a {
+  margin: auto 1.6rem;
+  color: #454a59;
+}
+.nav nav a:hover {
+  color: #c8cbd5;
+}
+@media (max-width: 500px) {
+  .nav nav a {
+    margin: auto 1.6rem;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  padding-top: 130px;
+}
+.home .intro img {
+  border-radius: 0.5rem;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    max-width: 500px;
+  }
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  margin: 20px 2.5%;
+  height: 100%;
+  width: 28%;
+  border-radius: 2rem;
+}
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    width: 100%;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    margin-top: 2rem;
+    padding: 2rem 1.5rem;
+  }
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
+.home .walk .walk-text h3 {
+  margin-bottom: 10px;
+  margin-top: 2rem;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283a;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 10rem;
+  padding: 0.8rem 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283a;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 2.5rem;
+  }
+}
+.home .walk .walk-text svg {
+  width: 150px;
+  height: 100px;
+  margin-left: 5rem;
+  margin-bottom: -8rem;
+  margin-top: 3rem;
+  transform: translateY(-50%) translateX(-50%);
+  filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.3));
+  fill: #22283a;
+}
+.home .walk .walk-text svg path {
+  cursor: pointer;
+  animation: blob 2s infinite forwards;
+  transform-origin: 50% 50%;
+}
+.home .walk .walk-text svg path:hover {
+  fill: red;
+}
+.home .walk .walk-text svg text {
+  font-size: 4.5rem;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text svg {
+    margin: 3rem auto -6rem 225px;
+  }
+}
+@keyframes blob {
+  25% {
+    d: path("M 90 210 C 90 180 110 160 130 160 C 160 160 180 140 200 130 C 230 120 270 100 290 140 C 310 170 340 100 360 140 C 370 160 390 180 390 210 C 390 240 380 290 350 280 C 330 270 300 280 280 290 C 260 300 230 300 220 290 C 200 270 160 310 140 280 C 130 260 90 240 90 210 ");
+    transform: rotate(-5deg);
+  }
+  50% {
+    d: path("M 90 210 C 90 180 100 150 120 130 C 150 100 180 140 200 130 C 230 120 270 100 290 140 C 300 160 330 130 360 140 C 390 150 390 180 390 210 C 390 240 380 300 350 280 C 330 270 320 230 280 260 C 260 280 220 310 200 290 C 180 270 160 280 140 280 C 110 280 90 240 90 210");
+  }
+  75% {
+    d: path("M 90 210 C 90 180 110 180 130 170 C 150 160 170 130 200 130 C 240 130 260 150 290 140 C 310 130 340 120 360 140 C 380 160 390 180 390 210 C 390 240 380 260 350 270 C 320 280 290 270 270 260 C 240 250 230 280 210 290 C 180 310 130 300 110 280 C 90 260 90 240 90 210");
+    transform: rotate(5deg);
+  }
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.home .walk .walk-img img {
+  width: 100%;
+  border-radius: 1rem;
+  height: auto;
+}

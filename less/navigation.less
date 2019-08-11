@@ -1,1 +1,35 @@
-// Navigation code here
+.nav {
+  .flex(column, space-between);
+  .nav-align();
+  .nav-styles(@nav-bg, @nav-font);
+
+  // STRETCH - Fixed Navigation Bar
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  @media @phone {
+    max-width: 500px;
+  }
+
+  h1 {
+    .margin-color(2rem 0, @nav-font);
+  }
+
+  nav {
+    margin: auto 0;
+
+    a {
+      .margin-color(auto 1.6rem, @nav-font);
+
+      &:hover {
+        color: lighten(@nav-font, 50%);
+      }
+
+      @media @phone {
+        margin: auto 1.6rem;
+      }
+    }
+  }
+}
